@@ -144,13 +144,13 @@ label.header-logo{
     width: 65%; 
 } 
 .php { 
-    width: 10%; 
+    width: 50%; 
 } 
 .java{
     width: 80%;
 }
 .go { 
-    width: 60%; 
+    width: 70%; 
 } 
 
 .python { 
@@ -222,7 +222,6 @@ label.header-logo{
 }
 
 .proj {
-    flex: 1;
     /*padding: 20px;*/
     border: 1px solid #ccc;
     margin: 20px;
@@ -251,6 +250,7 @@ img.proj-img{
     height: 150px;
     overflow-y: scroll;
     color: #404040;
+    background-color: #e3e2e2;
     font-size: 15px;
   }
 
