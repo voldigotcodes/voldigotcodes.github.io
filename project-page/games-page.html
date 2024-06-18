@@ -10,22 +10,30 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #87CEEB; /* Sky Blue background */
+      background-color: #ebebeb; 
     }
 
     header {
       display: flex;
-      background-color: #e83030;
+      flex-wrap: wrap;
+      background-color: rgba(188, 21, 23, 0.597);
       color: #fff;
       text-align: center;
       padding: 1em;
     }
 
+    .header-right{
+      flex: 0 0 50%;
+    }
+    .header-left{
+      flex: 0 0 25%;
+    }
+    
     section {
       max-width: 800px;
       margin: 20px auto;
       padding: 20px;
-      background-color: #fff;
+      background-color: #f1f1f1;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       border-radius: 5px;
     }
@@ -52,25 +60,28 @@
 <body>
 
   <header>
-    <a href="../index.html" style="margin-top: 28px;">
-        <button style="float: left; margin-right: 20px; width: 80px;"> Back to Portfolio</button>
-    </a>
-    <h1>Games</h1>
+    <div class="header-left">
+      <a href="../index.html" style="margin-top: 28px;">
+              <button class="button-56" role="button" style="float: left; margin-right: 20px; width: 80px;"> Back to Portfolio</button>
+          </a>
+    </div>
+    <div class="header-right">
+      <h1>Games</h1>
+    </div>
   </header>
 
   <section>
     <div class="project-container">
       <div class="proj" >
-          <a href="../postgre/postgre.html">
+          <a href="###">
               <div class="proj-img-wrapper">
-                  <img class="proj-img" src="../postgre/postgre.png" alt="postgresql logo">
+                  <img class="proj-img" src="Games/SQUY/main-image.png" alt="SQUY image">
               </div>
               <div class="proj-desc">
-                  <h3>Symmetric Hash join</h3>
-                  <br>
-                  <p>PostgreSQL is a famous database management system, known by most who are into the database world. It uses multiple different algorithms
-                      for query optimisation, aka to optimise any request done on any database to bring the result out in the least possible time. In this project we implemented our 
-                      own query optimisation algorithm and put it into PostgreSQL source code and compiled it so that it could use our Symmetric Hash join instead of the regular has join it had.
+                  <h3>SQUY</h3>
+                  <h5>2D, Unity, C#</h5>
+                  <p>A simple 2D plateformer game with about 8 levels.
+                    Made with unity and the art with photoshop.
                   </p>
               </div>
           </a>
@@ -91,7 +102,7 @@
           </a>
       </div>
       <div class="proj" >
-          <a href="postgre/postgre.html">
+          <a href="####">
               <div class="proj-img-wrapper">
                   <img class="proj-img" src="postgre/postgre.png" alt="postgresql logo">
               </div>
