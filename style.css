@@ -86,7 +86,7 @@ label.header-logo{
     overflow-y: scroll;
   }
 
-  .right-box {
+.right-box {
     display: block;
     justify-content: center;
     align-items: flex-start;
@@ -98,6 +98,17 @@ label.header-logo{
     box-shadow: 2px 2px 20px 5px #b6b6b6;
     overflow-y: scroll;
   }
+
+  @media only screen and (max-width: 800px){
+    .left-box{
+        display:none;
+    }
+    .right-box{
+        width :100%;
+    }
+  }
+
+  
 
   .text-box{
     padding: 10px;
@@ -185,7 +196,7 @@ label.header-logo{
     display: flex;
     padding-top: 20px;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     overflow-y: scroll;
     font-size: 17px;
 
