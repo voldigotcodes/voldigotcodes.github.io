@@ -66,7 +66,6 @@ label.header-logo{
 
 .wrapper-div{
     display: flex;
-    overflow: hidden;
 }
 
 .id-img{
@@ -84,7 +83,6 @@ label.header-logo{
     height:fit-content;
     border-radius: 5%;
     box-shadow: 2px 2px 20px 5px #b6b6b6;
-    overflow-y: scroll;
   }
 
 .right-box {
@@ -97,7 +95,6 @@ label.header-logo{
     margin : 15px;
     border-radius: 5%;
     box-shadow: 2px 2px 20px 5px #b6b6b6;
-    overflow-y: scroll;
   }
 
   @media only screen and (max-width: 800px){
@@ -196,7 +193,6 @@ label.header-logo{
     padding-top: 20px;
     justify-content: center;
     align-items: top;
-    overflow-y: scroll;
     font-size: 17px;
 
 }
@@ -329,6 +325,26 @@ img.proj-img{
     padding: 0 40px;
   }
 }
+
+.header-right{
+animation-name: spin;
+animation-duration: 2s;
+animation: alternate;
+}
+
+@keyframes spin{
+0%{
+    transform: rotate(0deg);
+}
+50%{
+    background: #e83030;
+}
+100%{
+    transform: rotate(720deg);
+}
+}
+
+
 
 /* Buttone 56 */
 
