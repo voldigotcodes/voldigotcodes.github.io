@@ -22,9 +22,36 @@
       padding: 1em;
     }
 
-    .header-right{
-      flex: 0 0 50%;
+    /* img.proj-img{
+    object-fit: contain;
+  } */
+
+    @keyframes spins {
+    0%{
+        font-size: 100%;
+        transform: rotate(0deg);
     }
+    50%{
+        font-size: 200%;
+        ransform: rotate(200deg);
+    }
+    75%{
+        font-size:50%;
+    }
+    100%{
+        font-size:100%;
+        transform: rotate(720deg);
+    }
+    }
+    
+.header-right {
+    flex: 0 0 50%;
+    animation-name: spins;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    animation-direction:alternate;
+    }
+
     .header-left{
       flex: 0 0 25%;
     }
@@ -79,114 +106,103 @@
               </div>
               <div class="proj-desc">
                   <h3>SQUY</h3>
-                  <h5>2D, Unity, C#</h5>
-                  <p>A simple 2D plateformer game with about 8 levels.
+                  <h5>Unity, C#</h5>
+                  <p>A simple 2D plateformer game with 8 levels.
                     Made with unity and the art with photoshop.
                   </p>
-              </div>
+                </div>
           </a>
       </div>
       <div class="proj" >
           <a href="../floppybird/floppybird.html">
-              <div class="proj-img-wrapper">
-                  <img class="proj-img" src="../floppybird/bird.png" alt="postgresql logo">
+              <div class="proj-img-wrapper" style="object-fit:fill;">
+                  <img class="proj-img" src="../floppybird/bird.png" alt="floppy bird logo">
               </div>
               <div class="proj-desc">
                   <h3>Floppy bird</h3>
-                  <br>
+                  <h5>Unity, C#</h5>
                   <p>The Floppy Bird project is an homage to the popular and challenging mobile game, Flappy Bird, which gained widespread acclaim for its simple yet addictive gameplay.
-                      The objective of this project was to recreate the essence of Flappy Bird while adding a personal touch to the game development process.
-                      The replica features a bird character controlled by tapping on the space bar of your keyboard, navigating through a series of pipes with the aim of achieving the highest score possible.
                   </p>
               </div>
           </a>
       </div>
       <div class="proj" >
-          <a href="####">
-              <div class="proj-img-wrapper">
-                  <img class="proj-img" src="postgre/postgre.png" alt="postgresql logo">
-              </div>
-              <div class="proj-desc">
-                  <h3>Similarity Image Search</h3>
-                  <br>
-                  <p>PostgreSQL is a famous database management system, known by most who are into the database world. It uses multiple different algorithms
-                      for query optimisation, aka to optimise any request done on any database to bring the result out in the least possible time. In this project we implemented our 
-                      own query optimisation algorithm and put it into PostgreSQL source code and compiled it so that it could use our Symmetric Hash join instead of the regular has join it had.
-                  </p>
-              </div>
-          </a>
-      </div>
-      <div class="proj" >
-        <a href="postgre/postgre.html">
+        <a href="#">
             <div class="proj-img-wrapper">
-                <img class="proj-img" src="postgre/postgre.png" alt="postgresql logo">
+                <img class="proj-img" src="Games/Aeron/icon.jpg" alt="aeron logo">
             </div>
             <div class="proj-desc">
-                <h3>Project</h3>
-                <br>
-                <p>PostgreSQL is a famous database management system, known by most who are into the database world. It uses multiple different algorithms
-                    for query optimisation, aka to optimise any request done on any database to bring the result out in the least possible time. In this project we implemented our 
-                    own query optimisation algorithm and put it into PostgreSQL source code and compiled it so that it could use our Symmetric Hash join instead of the regular has join it had.
+                <h3>Aeron</h3>
+                <h5>Unity, C#</h5>
+                <p>
+                    Aeron is a game where players glide left and right to dodge blocks in a neon, cube-filled world.
                 </p>
             </div>
         </a>
     </div>
-    <div class="proj" >
-      <a href="postgre/postgre.html">
-          <div class="proj-img-wrapper">
-              <img class="proj-img" src="postgre/postgre.png" alt="postgresql logo">
-          </div>
-          <div class="proj-desc">
-              <h3>Project</h3>
-              <br>
-              <p>PostgreSQL is a famous database management system, known by most who are into the database world. It uses multiple different algorithms
-                  for query optimisation, aka to optimise any request done on any database to bring the result out in the least possible time. In this project we implemented our 
-                  own query optimisation algorithm and put it into PostgreSQL source code and compiled it so that it could use our Symmetric Hash join instead of the regular has join it had.
-              </p>
-          </div>
-      </a>
-  </div>
+      <div class="proj" >
+          <a href="####">
+              <div class="proj-img-wrapper">
+                  <img class="proj-img" src="Games/Hangman/in-game.png" alt="hangman logo">
+              </div>
+              <div class="proj-desc">
+                  <h3>Hangman : Web Edition</h3>
+                  <h5>Javascript</h5>
+                  <p> Hangman Web Edition is a fun, interactive JavaScript game. Guess letters to reveal hidden words in this modern take on a classic challenge.
+                  </p>
+              </div>
+          </a>
+      </div>
+      <div class="proj" >
+        <a href="#">
+            <div class="proj-img-wrapper">
+                <img class="proj-img" src="Games/Sapce Invaders/main-img.png" alt="Space Invader logo">
+            </div>
+            <div class="proj-desc">
+                <h3>Space Invader</h3>
+                <h5>Unity, C#</h5>
+                <p>Space Invader is an adventurous game where you’re stranded on an unknown planet. Your ship is broken, and its parts are scattered across the alien terrain. Explore the planet, gather the missing pieces, and repair your ship to escape.
+                </p>
+            </div>
+        </a>
+    </div>
   <div class="proj" >
-    <a href="postgre/postgre.html">
+    <a href="#">
         <div class="proj-img-wrapper">
-            <img class="proj-img" src="postgre/postgre.png" alt="postgresql logo">
+            <img class="proj-img" src="Games/VChess/fou.png" alt="VChess logo">
         </div>
         <div class="proj-desc">
-            <h3>Project</h3>
-            <br>
-            <p>PostgreSQL is a famous database management system, known by most who are into the database world. It uses multiple different algorithms
-                for query optimisation, aka to optimise any request done on any database to bring the result out in the least possible time. In this project we implemented our 
-                own query optimisation algorithm and put it into PostgreSQL source code and compiled it so that it could use our Symmetric Hash join instead of the regular has join it had.
+            <h3>VChess</h3>
+            <h5>Unity, C#</h5>
+            <p>VChess is a project that replicates the classic game of chess. Enjoy strategic gameplay with smooth mechanics and a clean design, perfect for chess enthusiasts of all levels.
             </p>
         </div>
     </a>
 </div>
 <div class="proj" >
-  <a href="postgre/postgre.html">
+  <a href="#">
       <div class="proj-img-wrapper">
-          <img class="proj-img" src="postgre/postgre.png" alt="postgresql logo">
+          <img class="proj-img" src="Games/Running out of Power/in-game-coin.png" alt="running-out-of-power logo">
       </div>
       <div class="proj-desc">
-          <h3>Project</h3>
-          <br>
-          <p>PostgreSQL is a famous database management system, known by most who are into the database world. It uses multiple different algorithms
-              for query optimisation, aka to optimise any request done on any database to bring the result out in the least possible time. In this project we implemented our 
-              own query optimisation algorithm and put it into PostgreSQL source code and compiled it so that it could use our Symmetric Hash join instead of the regular has join it had.
+          <h3>Running out of Power</h3>
+          <h5>Unity, C#</h5>
+          <p>
+            description
           </p>
       </div>
   </a>
 </div>
 <div class="proj" >
-  <a href="postgre/postgre.html">
+  <a href="#">
       <div class="proj-img-wrapper">
-          <img class="proj-img" src="postgre/postgre.png" alt="postgresql logo">
+          <img class="proj-img" src="Games/3D bulet particle generator/main-image.png" alt="3D bulet particle generator logo">
       </div>
       <div class="proj-desc">
-          <h3>Project</h3>
-          <br>
-          <p>PostgreSQL is a famous database management system, known by most who are into the database world. It uses multiple different algorithms
-              for query optimisation, aka to optimise any request done on any database to bring the result out in the least possible time. In this project we implemented our 
-              own query optimisation algorithm and put it into PostgreSQL source code and compiled it so that it could use our Symmetric Hash join instead of the regular has join it had.
+          <h3>3D bulet particle generator</h3>
+          <h5>Unity, C#</h5>
+          <p>
+            description
           </p>
       </div>
   </a>
