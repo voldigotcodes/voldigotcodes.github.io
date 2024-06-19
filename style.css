@@ -81,9 +81,12 @@ label.header-logo{
     width: 30%;
     margin : 15px;
     height:fit-content;
-    border-radius: 5%;
     box-shadow: 2px 2px 20px 5px #b6b6b6;
   }
+
+.inside-left-box{
+    display: none;
+}
 
 .right-box {
     display: block;
@@ -93,11 +96,15 @@ label.header-logo{
     width: 70%;
     height: fit-content;
     margin : 15px;
-    border-radius: 5%;
     box-shadow: 2px 2px 20px 5px #b6b6b6;
   }
 
   @media only screen and (max-width: 800px){
+    .small-header{
+        display : flex;
+        justify-content: center;
+        flex: 0 0 100%;
+    }
     .left-box{
         display:none;
     }
@@ -106,6 +113,11 @@ label.header-logo{
     }
     .menu{
         display:none;
+    }
+    .inside-left-box{
+        display:block;
+        margin : 5px;
+        height:fit-content;
     }
   }
 
