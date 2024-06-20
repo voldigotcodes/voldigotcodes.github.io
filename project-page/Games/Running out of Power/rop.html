@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Running out of Power</title>
+  <link rel="stylesheet" href="/project-page/page-style.css">
+  <style>
+   header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgb(204, 0, 0);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  .header-right {
+    flex: 0 0 50%;
+    }
+
+    .header-left{
+      flex: 0 0 25%;
+      margin: auto 20px auto 0px;
+
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b7b7b7; /* background */
+  }
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .carousel img {
+            width: 100%;
+            display: none;
+        }
+
+        .carousel img.active {
+            display: block;
+        }
+
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <a href="/project-page/games-page.html" >
+              <button class="button-56" role="button" > Back to Games</button>
+          </a>
+    </div>
+    <div class="header-right">
+      <h1>Running out of Power</h1>
+    </div>
+  </header>
+
+  <section>
+    <h2>About the Project</h2>
+    <p>
+      Running Out of Power is a 2D platformer that serves as a foundational skeleton for building engaging platforming games. Navigate through challenging levels, test your character’s abilities, and refine your game development skills. This project focuses on providing the core mechanics needed for a compelling 2D platformer experience.
+    </p>
+
+    <h2>Current Features</h2>
+    <ul>
+      <li>Basic Platforming Mechanics: Essential movements</li>
+    <li>Obstacle Avoidance: Navigate through various obstacles that test reflexes and timing.</li>
+    <li>Character Animation: Smooth and responsive animations for character actions.</li>
+    <li>Collision Detection: Accurate collision mechanics to ensure reliable interactions.</li>
+    <li>Interactive Environments: Elements in the levels that respond to player actions.</li>
+    <li>Enemy AI: Basic enemy behavior for added challenges.</li>
+    <li>Expandability: Easy to add new features and content as the project evolves.</li>
+    </ul>
+
+    <h2>Technologies Used</h2>
+    <ul>
+      <li>Unity Game Engine</li>
+      <li>C# Programming Language</li>
+      <li>Photoshop for asset creation</li>
+    </ul>
+
+    <h2>Project Demo</h2>
+    <div class="carousel">
+      <img src="in-game-coin.png" alt="start menu" class="active">
+      <img src="game-editor.png" alt="in game image">
+      <img src="in-game.png" alt="credit page">
+      <div class="carousel-buttons">
+          <button class="carousel-button" onclick="prevImage()">&#10094;</button>
+          <button class="carousel-button" onclick="nextImage()">&#10095;</button>
+      </div>
+  </div>
+  
+  <script>
+      let currentImageIndex = 0;
+      const images = document.querySelectorAll('.carousel img');
+  
+      function showImage(index) {
+          images.forEach((img, i) => {
+              img.classList.toggle('active', i === index);
+          });
+      }
+  
+      function prevImage() {
+          currentImageIndex = (currentImageIndex > 0) ? currentImageIndex - 1 : images.length - 1;
+          showImage(currentImageIndex);
+      }
+  
+      function nextImage() {
+          currentImageIndex = (currentImageIndex < images.length - 1) ? currentImageIndex + 1 : 0;
+          showImage(currentImageIndex);
+      }
+  </script>
+    <!-- <h2>Conclusion</h2>
+    <p>
+      In conclusion, this Floppy bird project demonstrates the use of Unity and C# for game development. It serves as an engaging example of creating a classic game within the Unity environment.
+    </p> -->
+  </section>
+  <section style="background-color: transparent; box-shadow: none;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between;margin: auto;">
+      <a href="/project-page/games-page.html" >
+        <button class="button-56" role="button"> Back to Games</button>
+    </a>
+    </div>
+  </section>
+</body>
+</html>
