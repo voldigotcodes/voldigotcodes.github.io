@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vChess</title>
+  <link rel="stylesheet" href="/project-page/page-style.css">
+  <style>
+   header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:#DDDFD1;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  .header-right {
+    flex: 0 0 50%;
+    }
+
+    .header-left{
+      flex: 0 0 25%;
+      margin: auto 20px auto 0px;
+
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    h1{
+      color: #724224;
+    }
+
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #724224; /* background */
+  }
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .carousel img {
+            width: 100%;
+            display: none;
+        }
+
+        .carousel img.active {
+            display: block;
+        }
+
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <a href="/project-page/games-page.html" >
+              <button class="button-56" role="button" > Back to Games</button>
+          </a>
+    </div>
+    <div class="header-right">
+      <h1>vChess</h1>
+    </div>
+  </header>
+
+  <section>
+    <h2>About the Project</h2>
+    <p>
+      VChess is a project that replicates the logic of the classic game of chess. Designed to showcase smooth gameplay mechanics, VChess focuses on accurately representing the core mechanics of chess without the need for full visual representation. This project is ideal for those interested in studying and experiencing the strategic elements of chess.
+    </p>
+
+    <h2>Current Features</h2>
+    <ul>
+      <li>Classic Chess Mechanics: Faithful reproduction of traditional chess rules and logic.</li>
+    <!-- <li>Smooth Gameplay: Enjoy seamless and responsive game interactions.</li> -->
+    <li>Move Validation: Ensure all moves adhere to standard chess rules.</li>
+    <li>Minimalistic Design: Focus on the core mechanics with a clean and simple interface.</li>
+    <li>Highlight Legal Moves: Visual aid to show all possible legal moves for each piece.</li>
+    </ul>
+
+    <!-- <h2>Potential Features</h2>
+    <ul>
+      <li>Power-Ups: Collectibles that provide temporary invincibility, speed boosts, or extra lives.</li>
+      <li>Checkpoints: Save points within levels to reduce the frustration of restarting.</li>
+      <li>Character Customization: Options to change the appearance of the main character.</li>
+      <li>Leaderboards: Track high scores and fastest times to compete with other players.</li>
+      <li>Achievements: In-game accomplishments for completing certain challenges or milestones.</li>
+    <li>Level Editor: Tool for players to create and share their own levels.</li>
+    <li>Soundtrack: Engaging and dynamic music that adapts to the level's intensity.</li>
+    <li>Boss Levels: Special challenging stages with unique mechanics and tougher obstacles.</li>
+    <li>Variable Difficulty: Different difficulty settings to cater to both casual and hardcore gamers.</li>
+    <li>Time Trials: Mode to complete levels as quickly as possible for best times.</li>
+    <li>Interactive Environment: Elements in the levels that react to the player's actions.</li>
+    </ul> -->
+
+    <h2>Technologies Used</h2>
+    <ul>
+      <li>Unity Game Engine</li>
+      <li>C# Programming Language</li>
+      <li>Photoshop for asset creation</li>
+    </ul>
+
+    <h2>Project Demo</h2>
+    <div class="carousel">
+      <img src="pawn.png" alt="pawn image" class="active">
+      <img src="king.png" alt="king image">
+      <img src="fou.png" alt="bishop image">
+      <div class="carousel-buttons">
+          <button class="carousel-button" onclick="prevImage()">&#10094;</button>
+          <button class="carousel-button" onclick="nextImage()">&#10095;</button>
+      </div>
+  </div>
+  
+  <script>
+      let currentImageIndex = 0;
+      const images = document.querySelectorAll('.carousel img');
+  
+      function showImage(index) {
+          images.forEach((img, i) => {
+              img.classList.toggle('active', i === index);
+          });
+      }
+  
+      function prevImage() {
+          currentImageIndex = (currentImageIndex > 0) ? currentImageIndex - 1 : images.length - 1;
+          showImage(currentImageIndex);
+      }
+  
+      function nextImage() {
+          currentImageIndex = (currentImageIndex < images.length - 1) ? currentImageIndex + 1 : 0;
+          showImage(currentImageIndex);
+      }
+  </script>
+  </section>
+  <section style="background-color: transparent; box-shadow: none;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between;margin: auto;">
+      <a href="/project-page/games-page.html" >
+        <button class="button-56" role="button"> Back to Games</button>
+    </a>
+  
+    <a href="../Running out of Power/rop.html">
+      <button class="button-56" role="button"> Next Game</button>
+  </a>
+    </div>
+  </section>
+</body>
+</html>
