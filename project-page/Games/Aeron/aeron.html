@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AERON</title>
+  <link rel="stylesheet" href="/project-page/page-style.css">
+  <style>
+   header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color:rgb(204, 0, 0);
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+  }
+  .header-right {
+    flex: 0 0 50%;
+    }
+
+    .header-left{
+      flex: 0 0 25%;
+      margin: auto 20px auto 0px;
+
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #b7b7b7; /* background */
+  }
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .carousel img {
+            width: 100%;
+            display: none;
+        }
+
+        .carousel img.active {
+            display: block;
+        }
+
+        .carousel-buttons {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-button {
+            background-color: rgba(0, 0, 0, 0.5);
+            border: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <a href="/project-page/games-page.html" >
+              <button class="button-56" role="button" > Back to Games</button>
+          </a>
+    </div>
+    <div class="header-right">
+      <h1>AERON</h1>
+    </div>
+  </header>
+
+  <section>
+    <h2>About the Project</h2>
+    <p>
+      Aeron is an electrifying game set in a neon, cube-filled world where players glide left and right to dodge obstacles. With its dynamic levels and pulsating soundtrack, Aeron delivers a heart-pounding experience that challenges your reflexes and precision. Immerse yourself in this visually captivating adventure and see how far you can go in the ever-changing landscape of Aeron!
+    </p>
+
+    <h2>Current Features</h2>
+    <ul>
+      <li>Dynamic Levels: Constantly changing environments that keep the gameplay exciting.</li>
+    <li>Neon Aesthetics: Bright, colorful graphics that create a visually striking experience.</li>
+    <li>Intuitive Controls: Simple and responsive controls for smooth gameplay.</li>
+    <li>[In development] Endless Mode: Infinite levels for an unending challenge.</li>
+    <li>Obstacle Variety: Different types of blocks and hazards to dodge, increasing the difficulty.</li>
+    </ul>
+
+    <!-- <h2>Potential Features</h2>
+    <ul>
+      <li>Power-Ups: Collectibles that provide temporary invincibility, speed boosts, or extra lives.</li>
+      <li>Checkpoints: Save points within levels to reduce the frustration of restarting.</li>
+      <li>Character Customization: Options to change the appearance of the main character.</li>
+      <li>Leaderboards: Track high scores and fastest times to compete with other players.</li>
+      <li>Achievements: In-game accomplishments for completing certain challenges or milestones.</li>
+    <li>Level Editor: Tool for players to create and share their own levels.</li>
+    <li>Soundtrack: Engaging and dynamic music that adapts to the level's intensity.</li>
+    <li>Boss Levels: Special challenging stages with unique mechanics and tougher obstacles.</li>
+    <li>Variable Difficulty: Different difficulty settings to cater to both casual and hardcore gamers.</li>
+    <li>Time Trials: Mode to complete levels as quickly as possible for best times.</li>
+    <li>Interactive Environment: Elements in the levels that react to the player's actions.</li>
+    </ul> -->
+
+    <h2>Technologies Used</h2>
+    <ul>
+      <li>Unity Game Engine</li>
+      <li>C# Programming Language</li>
+      <li>Photoshop for asset creation</li>
+    </ul>
+
+    <h2>Project Demo</h2>
+    <div class="carousel">
+      <img src="start-screen.png" alt="start menu" class="active">
+      <img src="in-game.png" alt="in game image">
+      <img src="credit.png" alt="credit page">
+      <div class="carousel-buttons">
+          <button class="carousel-button" onclick="prevImage()">&#10094;</button>
+          <button class="carousel-button" onclick="nextImage()">&#10095;</button>
+      </div>
+  </div>
+  
+  <script>
+      let currentImageIndex = 0;
+      const images = document.querySelectorAll('.carousel img');
+  
+      function showImage(index) {
+          images.forEach((img, i) => {
+              img.classList.toggle('active', i === index);
+          });
+      }
+  
+      function prevImage() {
+          currentImageIndex = (currentImageIndex > 0) ? currentImageIndex - 1 : images.length - 1;
+          showImage(currentImageIndex);
+      }
+  
+      function nextImage() {
+          currentImageIndex = (currentImageIndex < images.length - 1) ? currentImageIndex + 1 : 0;
+          showImage(currentImageIndex);
+      }
+  </script>
+    <p>
+      <!-- Add Unity WebGL demo link or screenshots from the game -->
+      <iframe style="width: 100%; height:400px;" src="https://www.youtube.com/embed/yU4JDZCgm4Y?si=49ySs1rJQ-QHEUpV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </p>
+    <!-- <h2>Conclusion</h2>
+    <p>
+      In conclusion, this Floppy bird project demonstrates the use of Unity and C# for game development. It serves as an engaging example of creating a classic game within the Unity environment.
+    </p> -->
+  </section>
+  <section style="background-color: transparent; box-shadow: none;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between;margin: auto;">
+      <a href="/project-page/games-page.html" >
+        <button class="button-56" role="button"> Back to Games</button>
+    </a>
+  
+    <a href="../Hangman/hangman.html">
+      <button class="button-56" role="button"> Next Game</button>
+  </a>
+    </div>
+  </section>
+</body>
+</html>
