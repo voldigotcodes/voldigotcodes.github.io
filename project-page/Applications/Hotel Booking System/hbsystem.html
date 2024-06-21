@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Space Invaders</title>
+  <title>Hotel Booking system</title>
   <link rel="stylesheet" href="/project-page/page-style.css">
   <style>
    header {
     display: flex;
     flex-wrap: wrap;
-    background-color:rgb(204, 0, 0);
+    background-color:rgba(172, 57, 221, 0.785);
     color: #fff;
     text-align: center;
     padding: 1em;
@@ -32,7 +32,7 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #b7b7b7; /* background */
+    background-color: #f1f1f1; /* background */
   }
         .carousel {
             position: relative;
@@ -75,27 +75,32 @@
 
   <header>
     <div class="header-left">
-      <a href="/project-page/games-page.html" >
-              <button class="button-56" role="button" > Back to Games</button>
+      <a href="/project-page/application-page.html" >
+              <button class="button-56" role="button" > Back to Applications</button>
           </a>
     </div>
     <div class="header-right">
-      <h1>Space Invaders</h1>
+      <h1>Hotel Booking system</h1>
     </div>
   </header>
 
   <section>
     <h2>About the Project</h2>
     <p>
-      Space Invaders is an adventurous Unity and C# game where you’re stranded on an unknown planet. Your ship is broken, and its parts are scattered across the alien terrain. Explore the mysterious planet, gather the missing pieces, and repair your ship to escape.
+      The Hotel Booking App is an Android application designed for seamless hotel reservations. Utilizing an SQL database for data storage, the app supports two types of accounts: Manager and Client. Managers oversee hotel operations and manage employees, while Clients can browse and book hotels effortlessly.
     </p>
 
     <h2>Current Features</h2>
     <ul>
-      <li>Immersive Exploration: Traverse an unknown planet filled with secrets and challenges.</li>
-    <li>Engaging Storyline: Uncover the story as you search for your ship's missing parts.</li>
-    <li>Interactive Gameplay: Interact with the environment and use tools to progress.</li>
-    <li>Inventory System: Manage collected items and ship parts.</li>
+      <li>Account Types: Two distinct user roles - Manager and Client, each with specific functionalities.</li>
+    <li>Manager Dashboard: Tools for managing hotels, employees, and overseeing bookings.</li>
+    <li>Client Profiles: Users can browse hotels, make reservations, and manage their bookings.</li>
+    <li>Booking System: Easy-to-use interface for clients to search, book, and confirm hotel reservations.</li>
+    <li>SQL Database: Robust data storage solution for managing user information, bookings, and hotel details.</li>
+    <li>Availability Calendar: View hotel availability and room options in a calendar format.</li>
+    <li>Notifications: Real-time updates for booking confirmations.</li>
+    <li>Search Filters: Advanced search options to filter hotels based on location, price, rating, etc.</li>
+    <li>Employee Management: Managers can add, remove, and manage hotel staff through the app.</li>
     </ul>
 
     <!-- <h2>Potential Features</h2>
@@ -115,22 +120,38 @@
 
     <h2>Technologies Used</h2>
     <ul>
-      <li>Unity Game Engine</li>
-      <li>C# Programming Language</li>
-      <li>Blender 3D for asset creation</li>
+      <li>Java</li>
+      <li>Android Studio</li>
+      <li>PostgreSQL</li>
     </ul>
+
     <h2>Team Members</h2>
     <ul>
-      <li>Voldi Monzambe : Game Programer</li>
-      <li>Liam : Asset Designer</li>
+      <li>Voldi M.</li>
+      <li>Urbain K.</li>
+      <li>Abraham T.</li>
     </ul>
+
+    <h2>Language</h2>
+    <li>French</li>
+
+    <h2>Links</h2>
+    <a target="_blank" href="https://github.com/voldigotcodes/SGBD-Project.git">
+      <li>GitHub</li>
+    </a>
+
+    <h2>SQL Database Model</h2>
+    <img src="Database model.png" alt="Database Model">
+
+    <h2>SQL Database Diagram</h2>
+    <img src="database diagram.png" alt="Database Diagram">
+
     <h2>Project Demo</h2>
     <div class="carousel">
-      <img src="main-img.png" alt="main image" class="active">
-      <img src="mountains.png" alt="image of the mountains">
-      <img src="story.png" alt="dialog box with the story">
-      <img src="dialog.png" alt="dialog box">
-      <img src="main-menu-activated.png" alt="main menu">
+      <img src="main-image.png" alt="login page" class="active">
+      <img src="search-filter.png" alt="admin home page">
+      <img src="client-management.png" alt="complaint processing for admin">
+      <img src="add-employee.png" alt="sign up page">
       <div class="carousel-buttons">
           <button class="carousel-button" onclick="prevImage()">&#10094;</button>
           <button class="carousel-button" onclick="nextImage()">&#10095;</button>
@@ -157,10 +178,10 @@
           showImage(currentImageIndex);
       }
   </script>
-    <p>
-      <!-- Add Unity WebGL demo link or screenshots from the game -->
-      <iframe style="width: 100%; height:400px;" src="https://www.youtube.com/embed/yU4JDZCgm4Y?si=49ySs1rJQ-QHEUpV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </p>
+  <p>
+    <!-- Add Unity WebGL demo link or screenshots from the game -->
+    <iframe style="width: 100%; height:400px;" src="https://www.youtube.com/embed/m54knM6597c?si=TPedqqlrkbL1BLPX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </p>
     <!-- <h2>Conclusion</h2>
     <p>
       In conclusion, this Floppy bird project demonstrates the use of Unity and C# for game development. It serves as an engaging example of creating a classic game within the Unity environment.
@@ -168,12 +189,12 @@
   </section>
   <section style="background-color: transparent; box-shadow: none;">
     <div style="display: flex; flex-wrap: wrap; justify-content: space-between;margin: auto;">
-      <a href="/project-page/games-page.html" >
-        <button class="button-56" role="button"> Back to Games</button>
+      <a href="/project-page/application-page.html" >
+        <button class="button-56" role="button"> Back to Applications</button>
     </a>
-  
-    <a href="../VChess/vchess.html">
-      <button class="button-56" role="button"> Next Game</button>
+
+    <a href="../SIS/sis.html">
+      <button class="button-56" role="button"> Next App</button>
   </a>
     </div>
   </section>

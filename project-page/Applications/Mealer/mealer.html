@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Space Invaders</title>
+  <title>Mealer</title>
   <link rel="stylesheet" href="/project-page/page-style.css">
   <style>
    header {
     display: flex;
     flex-wrap: wrap;
-    background-color:rgb(204, 0, 0);
+    background-color:rgba(172, 57, 221, 0.785);
     color: #fff;
     text-align: center;
     padding: 1em;
@@ -32,7 +32,7 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #b7b7b7; /* background */
+    background-color: #f1f1f1; /* background */
   }
         .carousel {
             position: relative;
@@ -75,27 +75,33 @@
 
   <header>
     <div class="header-left">
-      <a href="/project-page/games-page.html" >
-              <button class="button-56" role="button" > Back to Games</button>
+      <a href="/project-page/application-page.html" >
+              <button class="button-56" role="button" > Back to Applications</button>
           </a>
     </div>
     <div class="header-right">
-      <h1>Space Invaders</h1>
+      <h1>Mealer</h1>
     </div>
   </header>
 
   <section>
     <h2>About the Project</h2>
     <p>
-      Space Invaders is an adventurous Unity and C# game where you’re stranded on an unknown planet. Your ship is broken, and its parts are scattered across the alien terrain. Explore the mysterious planet, gather the missing pieces, and repair your ship to escape.
+      Mealer is an Uber-like application designed for home-cooked meals instead of restaurant food. The platform connects clients with local cooks, offering a unique dining experience with home-prepared dishes. Mealer includes a robust authentication system with three types of accounts: Admin, Cook, and Client. We used CircleCI for continuous integration and deployement and Firebase for data storage.
     </p>
 
     <h2>Current Features</h2>
     <ul>
-      <li>Immersive Exploration: Traverse an unknown planet filled with secrets and challenges.</li>
-    <li>Engaging Storyline: Uncover the story as you search for your ship's missing parts.</li>
-    <li>Interactive Gameplay: Interact with the environment and use tools to progress.</li>
-    <li>Inventory System: Manage collected items and ship parts.</li>
+      <li>Authentication System: Secure login and registration for Admin, Cook, and Client accounts using Firebase.</li>
+      <li>Continuous Integration: Utilized CircleCI for automated testing and deployment.</li>
+    <li>Data Storage: Used Firebase for secure and reliable data storage.</li>
+    <li>Account Types: Different functionalities and interfaces for Admins, Cooks, and Clients.</li>
+    <li>Admin Dashboard: Tools for managing users complatints and overseeing the platform.</li>
+    <li>Cook Profiles: Create and manage profiles showcasing available meals, pricing, and reviews.</li>
+    <li>Client Profiles: User profiles for browsing meals, placing orders, and leaving reviews.</li>
+    <li>Order System: Seamless process for clients to order meals and for cooks to manage orders.</li>
+    <li>Rating and Reviews: Clients can rate meals and leave reviews, helping others make informed choices.</li>
+    <li>Notifications: Real-time updates for order status, meal preparation, and delivery.</li>
     </ul>
 
     <!-- <h2>Potential Features</h2>
@@ -115,22 +121,41 @@
 
     <h2>Technologies Used</h2>
     <ul>
-      <li>Unity Game Engine</li>
-      <li>C# Programming Language</li>
-      <li>Blender 3D for asset creation</li>
+      <li>Java</li>
+      <li>Android Studio</li>
+      <li>Firebase</li>
+      <li>CircleCi</li>
     </ul>
+
     <h2>Team Members</h2>
     <ul>
-      <li>Voldi Monzambe : Game Programer</li>
-      <li>Liam : Asset Designer</li>
+      <li>Voldi Monzambe</li>
+      <li>Grâce Ramde</li>
+      <li>Urbain Kodjo</li>
+      <li>Khady</li>
+      <li>Mor</li>
     </ul>
+
+    <h2>Language</h2>
+    <li>French</li>
+
+    <h2>Links</h2>
+    <a target="_blank" href="https://github.com/uOttawaSEGA2022/mealerGroupe15.git">
+      <li>GitHub</li>
+    </a>
+
+    <h2>UML Diagram</h2>
+    <img src="UML Diagram.png" alt="UML Diagram of Mealer">
+
     <h2>Project Demo</h2>
     <div class="carousel">
-      <img src="main-img.png" alt="main image" class="active">
-      <img src="mountains.png" alt="image of the mountains">
-      <img src="story.png" alt="dialog box with the story">
-      <img src="dialog.png" alt="dialog box">
-      <img src="main-menu-activated.png" alt="main menu">
+      <img src="main-image.png" alt="login page" class="active">
+      <img src="admin.png" alt="admin home page">
+      <img src="complaint processing.png" alt="complaint processing for admin">
+      <img src="cuisinier-client.png" alt="sign up page">
+      <img src="menu.png" alt="client menu">
+      <img src="cook-menu.png" alt="cook menu">
+      <img src="dynamic-search.png" alt="search mechanism">
       <div class="carousel-buttons">
           <button class="carousel-button" onclick="prevImage()">&#10094;</button>
           <button class="carousel-button" onclick="nextImage()">&#10095;</button>
@@ -157,10 +182,6 @@
           showImage(currentImageIndex);
       }
   </script>
-    <p>
-      <!-- Add Unity WebGL demo link or screenshots from the game -->
-      <iframe style="width: 100%; height:400px;" src="https://www.youtube.com/embed/yU4JDZCgm4Y?si=49ySs1rJQ-QHEUpV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    </p>
     <!-- <h2>Conclusion</h2>
     <p>
       In conclusion, this Floppy bird project demonstrates the use of Unity and C# for game development. It serves as an engaging example of creating a classic game within the Unity environment.
@@ -168,12 +189,12 @@
   </section>
   <section style="background-color: transparent; box-shadow: none;">
     <div style="display: flex; flex-wrap: wrap; justify-content: space-between;margin: auto;">
-      <a href="/project-page/games-page.html" >
-        <button class="button-56" role="button"> Back to Games</button>
+      <a href="/project-page/application-page.html" >
+        <button class="button-56" role="button"> Back to Applications</button>
     </a>
   
-    <a href="../VChess/vchess.html">
-      <button class="button-56" role="button"> Next Game</button>
+    <a href="../Hotel Booking System/hbsystem.html">
+      <button class="button-56" role="button"> Next App</button>
   </a>
     </div>
   </section>
