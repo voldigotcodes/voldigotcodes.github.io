@@ -222,6 +222,24 @@ img.proj-img {
     margin: 10px 0;
     font-size: 1.2em;
 }
+.proj-desc h3 {
+    margin: 5px 0;
+}
+
+.proj-desc h5 {
+    margin: 5px 0;
+}
+
+@media (max-width : 800px){
+    .proj-desc {
+        height: auto; /* Adjust height to auto for smaller screens */
+        overflow-y: hidden; /* Hide overflow on smaller screens */
+        padding: 10px; /* Adjust padding */
+    }
+    .proj-desc p {
+        display: none;
+    }
+}
 
 .aboutme {
     margin: 40px 0;
