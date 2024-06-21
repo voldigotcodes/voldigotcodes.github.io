@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/project-page/page-style.css">
   <title>Symmetric Hash Join</title>
   <style>
     body {
@@ -37,15 +38,33 @@
       line-height: 1.6;
       color: #555;
     }
+    .header-right {
+    flex: 0 0 50%;
+    }
+
+    .header-left{
+      flex: 0 0 25%;
+      margin: auto 20px auto 0px;
+
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <a href="../index.html" style="margin-top: 28px;">
-        <button style="float: left; margin-right: 20px; width: 80px;"> Back to Portfolio</button>
-    </a>
-    <h1>Symmetric Hash Join : PostgreSQL</h1>
+    <div class="header-left">
+      <a href="/project-page/application-page.html" >
+              <button class="button-56" role="button" > Back to Applications</button>
+          </a>
+    </div>
+    <div class="header-right">
+      <h1>Symmetric Hash Join : PostgreSQL</h1>
+    </div>
+    
   </header>
 
   <section>
@@ -119,6 +138,18 @@
       In conclusion, this project has helped us understand a lot about the functioning of query optimisation in postgreSQL. 
       We believe that it has potential for future feature upgrades as getting data fast is one of the main concerns these days and trying out multiple different algorithms is one step in the right direction to get closer to a better execution time.
     </p>
+  </section>
+
+  <section style="background-color: transparent; box-shadow: none;">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between;margin: auto;">
+      <a href="/project-page/application-page.html" >
+        <button class="button-56" role="button"> Back to Applications</button>
+    </a>
+  
+    <a href="../Online Portfolio/portfolio.html">
+      <button class="button-56" role="button"> Next App</button>
+  </a>
+    </div>
   </section>
 
 </body>
