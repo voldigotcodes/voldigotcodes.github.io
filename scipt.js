@@ -25,7 +25,6 @@ window.onload = function () {
                 { y: 25, name: "HTML, CSS"}
             ]
         }],
-        backgroundColor: "#f1f1f1"
     });
 
     var chartMini = new CanvasJS.Chart("chartContainerMini", {
@@ -53,7 +52,6 @@ window.onload = function () {
                 { y: 25, name: "HTML, CSS"}
             ]
         }],
-        backgroundColor: "#f1f1f1"
     });
 
     

@@ -1,44 +1,49 @@
+/* Reset and General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #87CEEB; /* Sky Blue background */
-  }
+}
 
-
-  section {
+section {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-  }
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow for sections */
+    border-radius: 10px; /* Rounded corners */
+}
 
-  h1{
-      color: #f0f0f0;
-  }
+h1, h2 {
+    color: #333; /* Darkened heading colors for better readability */
+    font-weight: bold; /* Ensure headings stand out */
+}
 
-  h2 {
-    color: #333;
-  }
+p {
+    line-height: 1.8; /* Increased line-height for better readability */
+    color: #666; /* Slightly darker text color for better contrast */
+}
 
-  p {
-    line-height: 1.6;
-    color: #555;
-  }
+a {
+    color: #4682B4; /* Steel Blue link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
 
- /* Imported CSS */
+a:hover {
+    color: #1E90FF; /* Darker shade on hover */
+}
+
+/* Button Styles */
 .button-56 {
     align-items: center;
-    background-color: #fee6e3;
-    border: 2px solid #111;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #111;
+    background-color: #FF6347; /* Reddish-orange button color */
+    border: 2px solid #FF6347; /* Matching border color */
+    color: #fff; /* White text color */
     cursor: pointer;
     display: flex;
-    font-family: Inter,sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     height: 48px;
     justify-content: center;
@@ -51,9 +56,16 @@ body {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-  }
-  
-  .button-56:after {
+    border-radius: 8px; /* Rounded button corners */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transition effects */
+}
+
+.button-56:hover {
+    background-color: #FF4500; /* Darker shade on hover */
+    border-color: #FF4500; /* Adjusted border color on hover */
+}
+
+.button-56:after {
     background-color: #111;
     border-radius: 8px;
     content: "";
@@ -66,54 +78,38 @@ body {
     transform: translate(8px, 8px);
     transition: transform .2s ease-out;
     z-index: -1;
-  }
-  
-  .button-56:hover:after {
+}
+
+.button-56:hover:after {
     transform: translate(0, 0);
-  }
-  
-  .button-56:active {
+}
+
+.button-56:active {
     background-color: #ffdeda;
     outline: 0;
-  }
-  
-  .button-56:hover {
+}
+
+.button-56:hover {
     outline: 0;
-  }
-  
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     .button-56 {
-      padding: 0 40px;
+        padding: 0 40px;
     }
-  }
-  
-  /* Buttone 56 */
+}
 
-  a:link { 
-    text-decoration: none; 
-  } 
-  a:visited { 
-    text-decoration: none; 
-  } 
-  a:hover { 
-    text-decoration: none; 
-  } 
-  a:active { 
-    text-decoration: none; 
-  }
-
-  /* Carousel */
+/* Carousel Styles */
 .carousel {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
+    max-width: 100%;
+    margin: 20px auto;
     overflow: hidden;
 }
 
 .carousel img {
     width: 100%;
     display: none;
+    border-radius: 10px; /* Rounded corners for carousel images */
 }
 
 .carousel img.active {
@@ -136,5 +132,9 @@ body {
     font-size: 18px;
     padding: 10px;
     cursor: pointer;
+    border-radius: 5px; /* Rounded button corners */
 }
-/* Carousel */
+
+/* Add additional styles or overrides as needed */
+
+/* End of CSS */
