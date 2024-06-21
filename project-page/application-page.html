@@ -22,9 +22,23 @@
       padding: 1em;
     }
 
-    .header-right{
-      flex: 0 0 50%;
+    @keyframes breathe {
+    0%, 100% {
+        transform: scale(1);
     }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+.header-right {
+    flex: 0 0 50%;
+    animation-name: breathe;
+    animation-duration: 6s; /* Adjust animation duration */
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in-out;
+    transform-origin: center;
+}
     .header-left{
       flex: 0 0 25%;
     }
